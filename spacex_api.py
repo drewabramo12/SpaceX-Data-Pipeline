@@ -1,9 +1,11 @@
-import  requests
 import pandas as pd
 
-response = requests.get("http://api.spacexdata.com/v4/launches")
-data = response.json()
+url = "http://api.spacexdata.com/v4/launches"
 
-df = pd.DataFrame(data)
+df = pd.read_json(url)
 
 print(df.head())
+
+print(df.comlumns)
+
+print(df.dtypes)
