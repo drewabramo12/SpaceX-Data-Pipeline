@@ -20,5 +20,5 @@ def main():
     singer.write_schema('launches', schema, 'id')
     singer.write_records('launches', records)
 
-    if __name__ == '__main__':
-        main()
+if __name__ == '__main__':
+    main()
